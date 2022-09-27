@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="l.a.css"> 
+
+  <head>
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"> <b>Mahal mo ba ako?</b></p>
+            <button class="btn" id="Yes">Yes</button>
+            <button class="brn" id="Hindi">Hindi</button>
+        </div>
+    </div>
+</body>
+<script>
+const noBtn = document.getElementById('Hindi');
+const yesBtn = document.getElementById('Yes');
+const qeus = document.getElementById('question');
+noBtn.addEventListener("click", ()=>{
+    let rand = Math.floor(Math.random() * (500 - 100) + 1);
+    let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+    noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+
+
+
+});
+
+yesBtn.addEventListener("click",()=>{
+    qeus.innerHTML = "I love you too <3"
+})
+
+</script>
+
+</html>
