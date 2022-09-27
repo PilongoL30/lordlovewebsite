@@ -1,6 +1,6 @@
 body{
-    background: url(kupido.jpg) ;
-    background-size: 1280px 750px;
+    background: url(kupido.jpg) no-repeat;
+    background-size: COVER;
 }
 
 .wrapper{
